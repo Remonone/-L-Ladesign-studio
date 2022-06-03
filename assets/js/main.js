@@ -51,6 +51,6 @@ menuButton.addEventListener('click', () => {
 
 for(let item of document.querySelectorAll('.gallery-item')){
     item.addEventListener('click', () => {
-        window.location.href('/render/card/index.html')
+        window.location.href('./render/card/')
     });
 }
