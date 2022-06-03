@@ -1,0 +1,9 @@
+<footer>
+    <div class="container">
+        <div class="footer-wrapper">
+            <a href="#" class="menu">Houzz</a>
+            <a href="#" class="menu">Instagram</a>
+        </div>
+        <small>© 2022 LA Design, all rights reserved.</small>
+    </div>
+</footer>

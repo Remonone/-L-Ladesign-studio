@@ -1,0 +1,44 @@
+{% set title = "Portfolio" %}
+{% set header_class = "header_dark" %}
+{% extends "layout.nunjucks" %}
+
+{% block styles %}
+
+<style>
+    .portfolio{
+        padding-top: 205px!important;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="portfolio">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <nav class="navbar">
+                <ul>
+                    <li class="navbar-item selected">
+                        <span class="menu">Все работы</span>
+                        <span class="navbar-item__count">29</span>
+                    </li>
+                    <li class="navbar-item">
+                        <span class="menu">Квартиры</span>
+                        <span class="navbar-item__count">29</span>
+                    </li>
+                    <li class="navbar-item">
+                        <span class="menu">дома</span>
+                        <span class="navbar-item__count">29</span>
+                    </li>
+                    <li class="navbar-item">
+                        <span class="menu">коммерческие помещения</span>
+                        <span class="navbar-item__count">29</span>
+                    </li>
+                </ul>
+            </nav>
+            {% include "gallery.nunjucks" %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

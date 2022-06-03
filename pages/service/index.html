@@ -1,0 +1,312 @@
+{% set title = "Services" %}
+{% set header_class = "header_dark" %}
+{% extends "layout.nunjucks" %}
+
+{% block styles %}
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+  <style>
+      @media(max-width: 400px){
+          .swiper-pagination-bullet{
+              width: 31px!important;
+          }
+      }
+  </style>
+
+{% endblock %}
+
+{% block content %}
+
+<main>
+    <section>
+        <div class="services">
+            <div class="container">
+                <h2>услуги и цены</h2>
+                <div class="services-wrapper">
+                    <div class="services-title">
+                        <h3>Зачем вам нужен дизайн-проект</h3>
+                    </div>
+                    <div class="services-info">
+                        <div class="services-item">
+                            <h4>Чтобы ничего не упустить</h4>
+                            <p>Качественный дизайн-проект поможет избежать ошибок и переделок, которые приводят к лишним тратам и затягивают сроки ремонта</p>
+                        </div>
+                        <div class="services-item">
+                            <h4>Получить нужный результат</h4>
+                            <p>С помощью профессионалов вы сможете донести до строителей свое видение будущего дизайна интерьера</p>
+                        </div>
+                        <div class="services-item">
+                            <h4>Создать комфорт</h4>
+                            <p>Грамотная планировка и продуманная расстановка мебели сделает пространство эргономичным и функциональным</p>
+                        </div>
+                        <div class="services-item">
+                            <h4>Сэкономить деньги</h4>
+                            <p>Дизайнер подберет и рассчитает нужное количество материалов с учетом площади помещения, что поможет избежать перерасхода</p>
+                        </div>
+                        <div class="services-item">
+                            <h4>Потратить время на что-то более приятное</h4>
+                            <p>Вам не придется ездить по магазинам, месяцами подбирать и продумывать подходящие дизайнерские решения в интернете. Не нужно постоянно ездить на объект и созваниваться с рабочими, пытаться самостоятельно узаконить новые планировочные решения. Студия дизайна интерьера LА Design сделает все это за вас!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cost">
+            <div class="container">
+                <h3>СТОИМОСТЬ РАЗРАБОТКИ ДИЗАЙН-ПРОЕКТА</h3>
+                <div class="cost-list">
+                    <div class="cost-item">
+                        <div class="cost-item-info">
+                            <div class="cost-item-visible">
+                                <h3>Basic</h3>
+                                <span class="cost-item-price">от 2500 ₽</span>
+                            </div>
+                            <div class="cost-item-hidden">
+                                <ul>
+                                    <li>Обмерочный план</li>
+                                    <li>План расстановки мебели</li>
+                                    <li>План демонтажный</li>
+                                    <li>План монтажный</li>
+                                    <li>План полов с материалами</li>
+                                </ul>
+                                <div class="cost-item-link">
+                                    <a href="#" class="button">
+                                        <span>Заказать</span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L4 12" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.33398 4H12.0007V10.6667" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cost-item-link">
+                            <a href="#" class="button">
+                                <span>Заказать</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L4 12" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33398 4H12.0007V10.6667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="cost-item-link_mob">
+                            <a href="#" class="button hollow">
+                                <span id="text">
+                                    <span class="visible">Развернуть</span>
+                                    <span>Свернуть</span>
+                                </span>
+                                <img src="/assets/images/switch-button.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cost-item recommended">
+                        <div class="cost-item-info">
+                            <div class="cost-item-visible">
+                                <h3>pro</h3>
+                                <span class="cost-item-price">от 3500 ₽</span>
+                            </div>
+                            <div class="cost-item-hidden">
+                                <ul>
+                                    <li>Обмерочный план</li>
+                                    <li>План расстановки мебели</li>
+                                    <li>План демонтажный</li>
+                                    <li>План монтажный</li>
+                                    <li>План полов с материалами</li>
+                                    <li>План экспликации</li>
+                                </ul>
+                                <div class="cost-item-link">
+                                    <a href="#" class="button">
+                                        <span>Заказать</span> <!--stroke: var(--white)-->
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L4 12" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.33398 4H12.0007V10.6667" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cost-item-link">
+                            <a href="#" class="button">
+                                <span>Заказать</span> <!--stroke: var(--white)-->
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L4 12" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33398 4H12.0007V10.6667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="cost-item-link_mob">
+                            <a href="#" class="button hollow">
+                                <span id="text">
+                                    <span class="visible">Развернуть</span>
+                                    <span>Свернуть</span>
+                                </span>
+                                <img src="/assets/images/switch-button.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-item-info">
+                            <div class="cost-item-visible">
+                                <h3>exclusive</h3>
+                                <span class="cost-item-price">от 5000 ₽</span>
+                            </div>
+                            <div class="cost-item-hidden">
+                                <ul>
+                                    <li>Обмерочный план</li>
+                                    <li>План расстановки мебели</li>
+                                    <li>План демонтажный</li>
+                                    <li>План монтажный</li>
+                                    <li>&#8212;</li>
+                                    <li>План экспликации</li>
+                                    <li>Чертежи сложных элементов и мебели (если заказывать отдельно - расчет индивидуальный)</li>
+                                    <li>Спецификация осветительного оборудования</li>
+                                    <li>Декорирование</li>
+                                </ul>
+                                <div class="cost-item-link">
+                                    <a href="#" class="button">
+                                        <span>Заказать</span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L4 12" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.33398 4H12.0007V10.6667" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cost-item-link">
+                            <a href="#" class="button">
+                                <span>Заказать</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L4 12" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33398 4H12.0007V10.6667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="cost-item-link_mob">
+                            <a href="#" class="button hollow">
+                                <span id="text">
+                                    <span class="visible">Развернуть</span>
+                                    <span>Свернуть</span>
+                                </span>
+                                <img src="/assets/images/switch-button.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cost-button">
+                    <a href="#" id="cost-switch">
+                            <span id="text">
+                                <span class="visible">Развернуть</span>
+                                <span>Свернуть</span>
+                            </span>
+                            <img src="/assets/images/switch-button.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="projects">
+            <div class="container">
+                <h3>реализованые проекты</h3>
+                <div class="swiper-container swiper-projects">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project1.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project2.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project4.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project2.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project3.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-projects-pagination swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                        <div class="project-navigation-left">
+                            <img src="/assets/images/nav-left.svg" alt="">
+                        </div>
+                        <div class="project-navigation-right">
+                            <img src="/assets/images/nav-right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="button_application js_enable_modal" data-target="send">
+                    <span>оставить заявку на проект</span>
+                    <img src="/assets/images/application-arrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
+
+{% block scripts %} 
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    var projects = new Swiper('.swiper-projects',{
+        slidesPerGroup: 1,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints:{
+            550:{
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            980:{
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1270:{
+                slidesPerView: 4,
+                spaceBetween: 31,
+            }
+        },
+        pagination:{
+            el: '.swiper-projects-pagination',
+            type:'bullets',
+            clickable: true,
+        },
+        navigation:{
+            nextEl: '.project-navigation-right',
+            prevEl: '.project-navigation-left'
+        }
+    });
+    var showMore = document.getElementById('cost-switch');
+    showMore.addEventListener('click', (e) => {
+        e.preventDefault();
+        for(let span of showMore.querySelectorAll('span')){
+            span.classList.toggle('visible');
+        }
+        showMore.classList.toggle('active');
+        document.querySelector('.cost-list').classList.toggle('shown');
+    });
+    for(let button of document.querySelectorAll('.cost-item-link_mob a')){
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            button.parentElement.parentElement.querySelector('.cost-item-hidden').classList.toggle('active');
+            for(let span of button.querySelectorAll('span')){
+                span.classList.toggle('visible');
+            }
+        });
+    }
+</script>
+
+{% endblock %}

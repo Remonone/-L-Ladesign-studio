@@ -1,0 +1,221 @@
+{% set title = "Card" %}
+{% extends "layout.nunjucks" %}
+
+{% block styles %}
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+{% endblock %}
+
+{% block content %}
+
+<main>
+    <section>
+        <div class="main">
+            <div class="main-background">
+                <img src="/assets/images/work1_bg.png" alt="">
+            </div>
+            <div class="container">
+                <h2>Loft</h2>
+                <h4>Unique collection</h4>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="stats">
+            <div class="container">
+                <h3>Дизайн 1-комнатной квартиры в стиле loft</h3>
+                <div class="stats-wrapper">
+                    <div class="stats-info">
+                        <div class="stats-list">
+                            <div class="stats-item">
+                                <span class="stats-item-characteristic">Для кого</span>
+                                <span class="stats-item-value">молодой мужчина</span>
+                            </div>
+                            <div class="stats-item">
+                                <span class="stats-item-characteristic">общая площадь</span>
+                                <span class="stats-item-value">60м2</span>
+                            </div>
+                            <div class="stats-item">
+                                <span class="stats-item-characteristic">место расположения</span>
+                                <span class="stats-item-value">Краснодар</span>
+                            </div>
+                            <div class="stats-item">
+                                <span class="stats-item-characteristic">срок выполнения</span>
+                                <span class="stats-item-value">1 месяц</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-description">
+                        <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это лофт в классическом понимании и с очень интересными деталями. <br>В интерьере использовано довольно много различных материалов и текстур. Однако благодаря тому, что каждый материал применяется не единожды и находит себе продолжение в других помещениях, квартира смотрится цельным объёмом, где все текстуры дополняют друг друга и сочетаются между собой.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="slider">
+            <div class="container">
+                <div class="swiper-container swiper-gallery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/assets/images/slider1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/slider1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/slider1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/slider1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/slider1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-gallery-pagination swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                        <div class="galery-navigation-left">
+                            <img src="/assets/images/nav-left.svg" alt="">
+                        </div>
+                        <div class="galery-navigation-right">
+                            <img src="/assets/images/nav-right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="decision">
+            <div class="container">
+                <h3>практичность и рациональное использование каждого квадратного метра</h3>
+                <div class="decision-wrapper">
+                    <div class="decision-task">
+                        <h4>Задача</h4>
+                        <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это лофт в классическом понимании и с очень интересными деталями.</p>
+                    </div>
+                    <div class="decision-solution">
+                        <h4>Решение</h4>
+                        <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это лофт в классическом понимании и с очень интересными деталями. <br>В интерьере использовано довольно много различных материалов и текстур. Однако благодаря тому, что каждый материал применяется не единожды и находит себе продолжение в других помещениях, квартира смотрится цельным объёмом, где все текстуры дополняют друг друга и сочетаются между собой.</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="card-image">
+            <img src="/assets/images/loft-image.png" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="features">
+            <div class="container">
+                <h4>особенности проекта</h4>
+                <div class="features-wrapper">
+                    <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это лофт в классическом понимании и с очень интересными деталями.
+                        <br><br>В интерьере использовано довольно много различных материалов и текстур.</p>
+                    <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это лофт в классическом понимании и с очень интересными деталями.</p>
+                </div>
+                <div class="features-gallery">
+                    <div class="features-gallery-image"><img src="/assets/images/loft1.png" alt=""></div>
+                    <div class="features-gallery-image"><img src="/assets/images/loft2.png" alt=""></div>
+                    <div class="features-gallery-image"><img src="/assets/images/loft3.png" alt=""></div>
+                    <div class="features-gallery-image"><img src="/assets/images/loft4.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="projects">
+            <div class="container">
+                <h3>похожие проекты</h3>
+                <div class="swiper-container swiper-projects">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project1.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project2.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project4.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project2.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image"><img src="/assets/images/project3.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-navigation">
+                        <div class="project-navigation-left">
+                            <img src="/assets/images/nav-left.svg" alt="">
+                        </div>
+                        <div class="project-navigation-right">
+                            <img src="/assets/images/nav-right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="button_application">
+                    <span>оставить заявку на проект</span>
+                    <img src="/assets/images/application-arrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
+
+{% block scripts %} 
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    var gallery = new Swiper('.swiper-gallery',{
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        pagination:{
+            el: '.swiper-gallery-pagination',
+            type:'bullets',
+            clickable: true,
+        },
+        navigation:{
+            nextEl: '.galery-navigation-right',
+            prevEl: '.galery-navigation-left'
+        }
+    });
+    var projects = new Swiper('.swiper-projects', {
+        slidesPerGroup: 1,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints:{
+            550:{
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            980:{
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1270:{
+                slidesPerView: 4,
+                spaceBetween: 31,
+            }
+        },
+        navigation:{
+            nextEl: '.project-navigation-right',
+            prevEl: '.project-navigation-left'
+        }
+    });
+</script>
+
+{% endblock %}

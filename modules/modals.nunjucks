@@ -1,0 +1,62 @@
+{% block modals %}
+
+<div class="blackout" id="blackout">
+    <div class="modal">
+        <div class="modal-send" id="send">
+            <div class="close-button">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                        <path d="M25 5L5 25M25 25L5 5L25 25Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="modal-send-form">
+                <h3>оставЬТЕ СВОИ КОНТАКТЫ. мЫ СВЯЖЕМСЯ С ВАМИ И ОБСУДИМ ВАШ ПРОЕКТ</h3>
+                <form action="#" class="modal-send-form-input">
+                    <div class="modal-send-form-input-fields">
+                        <label class="input">
+                            <input class="input__field" type="text" placeholder=" " />
+                            <span class="input__label">Ваше имя</span>
+                        </label>
+                        <label class="input">
+                            <input class="input__field" type="text" placeholder=" " />
+                            <span class="input__label">Ваша эл.почта</span>
+                        </label>
+                    </div>
+                    <div class="modal-send-form-input-respond">
+                        <button href="#" class="button js_enable_modal" data-target="confirm">
+                            <span>Отправить</span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 9" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.33203 1H8.9987V7.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <small>Нажимая на кнопку, я даю <a href="#">согласие на обработку персональных данных</a></small>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-confirm" id="confirm">
+            <div class="close-button">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                        <path d="M25 5L5 25M25 25L5 5L25 25Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="modal-confirm-info">
+                <img src="/assets/images/confirm.svg" alt="">
+                <h3>Ваша Заявка успешно отправлена</h3>
+                <p>Спасибо, что обратились в нашу студию. Наш дизайнер с вами свяжется</p>
+                <ul class="modal-confirm-info-wrapper">
+                    <li><a href="#">houzz</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">vkontakte</a></li>
+                    <li><a href="#">instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
